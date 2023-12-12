@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a, input, button, textarea {
+	transition: all 0.3s;
+	border-radius: 5px;
+	outline: none;
+}
+
+ul {
+	marks: none;
+}
+
+body {
+	color: var(--dark);
+	background-color: var(--light);
+	font-family: var(--font);
+	font-weight: var(--medium);
+	font-size: var(--regular);
+	line-height: 1.3em;
+}
+
+.title {
+	font-size: var(--title);
+}
+
+.sub-title {
+	font-size: var(--sub-title);
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 2rem;
+}
+
+.col {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 100%;
+}
+
+.col-1 {
+	width: 8.333%;
+}
+
+.col-2 {
+	width: 16.666%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.333%;
+}
+
+.col-5 {
+	width: 41.666%;
+}
+
+.col-5 {
+	width: 41.666%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.333%;
+}
+
+.col-8 {
+	width: 66.666%;
+}
+
+.col-10 {
+	width: 83.333%;
+}
+
+.col-11 {
+	width: 91.666%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.btn  {
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 5px;
+	color: var(--light);
+	background-color: var(--primary);
+	outline: none;
+}
+
+.btn_agree {
+	background-color: var(--agree);
+}
+
+.btn_warn {
+	background-color: var(--warn);
+}
+
+.btn_error {
+	background-color: var(--error);
+}
+
+.btn:hover {
+	box-shadow: 0 0 px rgba(0, 0, 0, .2)
+}
+
+::placeholder {
+	color: var(--disable);
+}
+
+.toast {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid var(--primary);
+	color: var(--primary);
+	background-color: var(--primary30);
+	padding: 15px;
+	text-align: center;
+}
+
+.toast_agree {
+	border: 1px solid var(--agree);
+	color: var(--agree);
+	background-color: var(--agree30);
+}
+
+.toast_warn {
+	border: 1px solid var(--warn);
+	color: var(--warn);
+	background-color: var(--warn30);
+}
+
+.toast_error {
+	border: 1px solid var(--error);
+	color: var(--error);
+	background-color: var(--error30);
+}

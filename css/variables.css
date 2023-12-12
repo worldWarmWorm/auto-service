@@ -1,0 +1,25 @@
+:root {
+	/* colors */
+	--light: rgb(238, 238, 238);
+	--dark: rgb(28, 28, 28);
+	--disable: rgb(126, 126, 126);
+	--error: rgb(192, 57, 43);
+	--warn: rgb(243, 156, 18);
+	--agree: rgb(46, 204, 113);
+	--primary: rgb(52, 152, 219);
+
+	/* toast color */
+	--error30: rgba(192, 57, 43, .3);
+	--warn30: rgba(243, 156, 18, .3);
+	--agree30: rgba(46, 204, 113, .3);
+	--primary30: rgba(52, 152, 219, .3);
+
+	/* text */
+	--font: "Montserrat", sans-serif;
+	--tiny: 300;
+	--medium: 400;
+	--bold: 700;
+	--title: 24px;
+	--sub-title: 20px;
+	--regular: 16px;
+}
