@@ -12,13 +12,23 @@ a, input, button, textarea {
 	outline: none;
 }
 
+img {
+	object-fit: cover;
+	width: 100%;
+}
+
 ul {
 	marks: none;
 }
 
+html {
+	height: 100%;
+}
+
 body {
+	min-height: 100%;
 	color: var(--dark);
-	background-color: var(--light);
+	background-color: var(--app);
 	font-family: var(--font);
 	font-weight: var(--medium);
 	font-size: var(--regular);
@@ -31,10 +41,12 @@ body {
 
 .sub-title {
 	font-size: var(--sub-title);
+	margin-bottom: 50px;
 }
 
 .container {
 	width: 100%;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 

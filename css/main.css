@@ -1,3 +1,42 @@
 @import url('./fonts.css');
 @import url('./variables.css');
 @import url('./vendor.css');
+
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.header, .footer, .main {
+	background-color: var(--light);
+	padding: 20px;
+}
+
+.header {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 1px;
+	flex: 0 0 auto;
+	margin-top: 20px;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: 1px;
+	flex: 0 0 auto;
+	margin-bottom: 20px;
+}
+
+.logo {
+	margin-right: 30px;
+	width: 60px;
+}

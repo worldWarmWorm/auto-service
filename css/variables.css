@@ -1,8 +1,9 @@
 :root {
 	/* colors */
-	--light: rgb(238, 238, 238);
+	--light: rgb(255, 255, 255);
 	--dark: rgb(28, 28, 28);
-	--disable: rgb(126, 126, 126);
+	--disable: rgb(127, 127, 127);
+	--app: rgb(235,236,240);
 	--error: rgb(192, 57, 43);
 	--warn: rgb(243, 156, 18);
 	--agree: rgb(46, 204, 113);
