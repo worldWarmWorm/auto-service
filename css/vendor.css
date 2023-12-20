@@ -10,6 +10,7 @@ a, input, button, textarea {
 	transition: all 0.3s;
 	border-radius: 5px;
 	outline: none;
+	cursor: pointer;
 }
 
 img {
@@ -44,10 +45,18 @@ body {
 	margin-bottom: 50px;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .container {
 	width: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
+}
+
+.page {
+	padding: 50px 0;
 }
 
 .row {
@@ -115,7 +124,7 @@ body {
 
 .btn  {
 	border: none;
-	padding: 10px 15px;
+	padding: 15px 15px;
 	cursor: pointer;
 	font-weight: 500;
 	display: flex;
@@ -124,7 +133,11 @@ body {
 	margin: 10px 5px;
 	color: var(--light);
 	background-color: var(--primary);
-	outline: none;
+	min-width: 120px;
+}
+
+.btn:hover {
+	transform: var(--up);
 }
 
 .btn_agree {
@@ -137,10 +150,6 @@ body {
 
 .btn_error {
 	background-color: var(--error);
-}
-
-.btn:hover {
-	box-shadow: 0 0 px rgba(0, 0, 0, .2)
 }
 
 ::placeholder {
@@ -173,4 +182,42 @@ body {
 	border: 1px solid var(--error);
 	color: var(--error);
 	background-color: var(--error30);
+}
+
+.form {
+	margin: 15px auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.label__title {
+	margin: 0 15px;
+}
+
+input {
+	font-size: var(--regular);
+}
+
+input:is([type="text"], [type="email"], [type="number"], [type="password"]) {
+	size: 50;
+	padding: 15px;
+	margin: 15px;
+	min-width: 280px;
+	border: 2px solid var(--app);
+	border-radius: 5px;
+	cursor: auto;
+}
+
+input:is([type="text"], [type="email"], [type="number"], [type="password"]):focus {
+	border-color: var(--primary) !important;
+}
+
+input:is([type="text"], [type="email"], [type="number"], [type="password"]):hover {
+	border-color: var(--primary30);
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

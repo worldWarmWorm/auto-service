@@ -9,35 +9,68 @@
 	<body>
 		<div class="container">
 			<div class="app">
+
 				<header class="header">
 					<div class="logo">
 						<img src="./images/wheel.jpeg" alt="logo">
 					</div>
 					<div class="app-name">
-						<h1 class="title">
-							Автомобиль
-						</h1>
+						<h1 class="title">Обслуживание</h1>
+					</div>
+					<div class="user">
+						<div class="user__icon">
+							<a href="./pages/profile.html">
+								<img src="./images/user.png" alt="user">
+							</a>
+						</div>
+						<div class="user__authorization">
+							<a href="./pages/login.html">
+								<img src="./images/authorization.png" alt="authorization">
+							</a>
+						</div>
 					</div>
 				</header>
+
 				<main class="main">
-					<div class="user">
-						<h2 class="sub-title">
+					<div class="login page">
+						<h2 class="sub-title text-center">
+							Вход
+						</h2>
+						<form action="" class="form">
+							<label class="label">
+								<div class="label__title">Имя</div>
+								<input name="name" type="text" placeholder="Введите ваше имя" required>
+							</label>
+							<label class="label">
+								<div class="label__title">Email</div>
+								<input name="name" type="email" placeholder="example@ya.ru" required>
+							</label>
+							<input class="btn" type="submit" value="Войти">
+						</form>
+					</div>
+					<div class="registration page">
+						<h2 class="sub-title text-center">
+							Регистрация
+						</h2>
+					</div>
+					<div class="profile page">
+						<h2 class="sub-title text-center">
 							Пользователь
 						</h2>
 					</div>
-					<div class="car">
-						<h2 class="sub-title">
+					<div class="car page">
+						<h2 class="sub-title text-center">
 							Автомобиль
 						</h2>
 					</div>
-					<div class="service">
-						<h2 class="sub-title">
+					<div class="service page">
+						<h2 class="sub-title text-center">
 							Обслуживание
 						</h2>
 					</div>
 				</main>
 				<footer class="footer">
-					footer
+					Написать разработчику: <a href="https://t.me/davydkin_valery" target="_blank">@davydkin_valery</a>
 				</footer>
 			</div>
 		</div>

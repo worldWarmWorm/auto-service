@@ -23,4 +23,7 @@
 	--title: 24px;
 	--sub-title: 20px;
 	--regular: 16px;
+
+	/* transform */
+	--up: translate(0, -3px);
 }
