@@ -13,6 +13,20 @@ a, input, button, textarea {
 	cursor: pointer;
 }
 
+a {
+	color: var(--primary);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+a:hover {
+	border-bottom: 1px solid var(--primary);
+}
+
+.link {
+	border-radius: 0;
+}
+
 img {
 	object-fit: cover;
 	width: 100%;
@@ -192,15 +206,36 @@ body {
 }
 
 .label__title {
-	margin: 0 15px;
+	margin: 10px 15px 0;
+	line-height: var(--regular);
+}
+
+.label__title.required {
+	position: relative;
+	width: min-content;
+	white-space: nowrap;
+	cursor: help;
+	padding-right: 20px;
+}
+
+.label__title.required::after {
+	content: '✱';
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: var(--error);
+	line-height: var(--regular);
+}
+
+.message {
+	margin: 10px 15px;
 }
 
 input {
 	font-size: var(--regular);
 }
 
-input:is([type="text"], [type="email"], [type="number"], [type="password"]) {
-	size: 50;
+input:is([type="text"], [type="email"], [type="tel"], [type="password"]) {
 	padding: 15px;
 	margin: 15px;
 	min-width: 280px;
@@ -209,15 +244,14 @@ input:is([type="text"], [type="email"], [type="number"], [type="password"]) {
 	cursor: auto;
 }
 
-input:is([type="text"], [type="email"], [type="number"], [type="password"]):focus {
+input:is([type="text"], [type="email"], [type="tel"], [type="password"]):focus {
 	border-color: var(--primary) !important;
 }
 
-input:is([type="text"], [type="email"], [type="number"], [type="password"]):hover {
+input:is([type="text"], [type="email"], [type="tel"], [type="password"]):hover {
 	border-color: var(--primary30);
 }
 
 input[type="submit"] {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px 15px;
 }
