@@ -16,15 +16,15 @@ a, input, button, textarea {
 a {
 	color: var(--primary);
 	text-decoration: none;
-	border-bottom: 1px solid transparent;
-}
-
-a:hover {
-	border-bottom: 1px solid var(--primary);
 }
 
 .link {
 	border-radius: 0;
+	border-bottom: 1px solid transparent;
+}
+
+.link:hover {
+	border-bottom: 1px solid var(--primary);
 }
 
 img {

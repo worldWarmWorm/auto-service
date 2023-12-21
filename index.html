@@ -12,10 +12,12 @@
 
 				<header class="header">
 					<div class="logo">
-						<img src="./images/wheel.jpeg" alt="logo">
+						<a href="/">
+							<img src="./images/wheel.jpeg" alt="logo">
+						</a>
 					</div>
 					<div class="app-name">
-						<h1 class="title">Обслуживание</h1>
+						<h1 class="title">Тачка</h1>
 					</div>
 					<div class="user">
 						<div class="user__icon">
@@ -23,7 +25,7 @@
 								<img src="./images/user.png" alt="user">
 							</a>
 						</div>
-						<div class="user__authorization">
+						<div class="user__authorization" style="display: none;">
 							<a href="./pages/login.html">
 								<img src="./images/authorization.png" alt="authorization">
 							</a>
@@ -32,95 +34,6 @@
 				</header>
 
 				<main class="main">
-					<div class="login page">
-						<h2 class="sub-title text-center">
-							Вход
-						</h2>
-						<form action="" class="form">
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Имя</div>
-								<input name="name" type="text" placeholder="Введите имя" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Пароль</div>
-								<input name="password" type="password" autocomplete="off" autocomplete="off" required>
-							</label>
-							<div class="message">
-								<a href="" class="link">Забыли пароль?</a>
-							</div>
-							<input class="btn" type="submit" value="Войти">
-							<div class="message">
-								<a href="" class="link">Регистрация</a>
-							</div>
-						</form>
-					</div>
-
-					<div class="login page">
-						<h2 class="sub-title text-center">
-							Восстановление пароля
-						</h2>
-						<form action="" class="form">
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Новый пароль</div>
-								<input name="password" type="password" autocomplete="off" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Повторите пароль</div>
-								<input name="repeat" type="password" autocomplete="off" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Email</div>
-								<input name="email" type="email" placeholder="example@ya.ru" autocomplete="off" required>
-							</label>
-							<input class="btn" type="submit" value="Восстановить">
-							<div class="message">
-								<a href="" class="link">Вспомнил пароль</a>
-							</div>
-						</form>
-					</div>
-
-					<div class="registration page">
-						<h2 class="sub-title text-center">
-							Регистрация
-						</h2>
-						<form action="" class="form">
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Имя</div>
-								<input name="name" type="text" placeholder="Введите имя" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Email</div>
-								<input name="email" type="email" placeholder="example@ya.ru" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Телефон</div>
-								<input name="phone" type="tel" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+9-999-999-9999" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Пароль</div>
-								<input name="password" type="password" autocomplete="off" required>
-							</label>
-							<label class="label">
-								<div class="label__title required" title="Обязательное поле">Повторите пароль</div>
-								<input name="confirmation" type="password" autocomplete="off" required>
-							</label>
-							<input class="btn" type="submit" value="Зарегистрироваться">
-							<div class="message">
-								<a href="" class="link">Вход</a>
-							</div>
-						</form>
-					</div>
-
-					<div class="profile page">
-						<h2 class="sub-title text-center">
-							Пользователь
-						</h2>
-					</div>
-					<div class="car page">
-						<h2 class="sub-title text-center">
-							Автомобиль
-						</h2>
-					</div>
 					<div class="service page">
 						<h2 class="sub-title text-center">
 							Обслуживание
@@ -128,7 +41,7 @@
 					</div>
 				</main>
 				<footer class="footer">
-					Написать разработчику: <a href="https://t.me/davydkin_valery" target="_blank">@davydkin_valery</a>
+					Написать разработчику: <a class="link" href="https://t.me/davydkin_valery" target="_blank">@davydkin_valery</a>
 				</footer>
 			</div>
 		</div>
