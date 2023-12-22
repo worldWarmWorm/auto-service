@@ -8,7 +8,7 @@
 
 a, input, button, textarea {
 	transition: all 0.3s;
-	border-radius: 5px;
+	border-radius: var(--b-radius);
 	outline: none;
 	cursor: pointer;
 }
@@ -141,6 +141,7 @@ body {
 	padding: 15px 15px;
 	cursor: pointer;
 	font-weight: 500;
+	font-size: var(--regular);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -166,13 +167,42 @@ body {
 	background-color: var(--error);
 }
 
+.btn_left {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.btn_right {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.btn-icon {
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--light);
+	width: 30px;
+	height: 30px;
+	margin: auto 0;
+  margin-right: 0px;
+	padding: 5px;
+}
+
+.btn-icon:not(:last-child) {
+	margin-right: 3px;
+}
+
 ::placeholder {
 	color: var(--disable);
 }
 
 .toast {
 	width: 100%;
-	border-radius: 5px;
+	border-radius: var(--b-radius);
 	border: 1px solid var(--primary);
 	color: var(--primary);
 	background-color: var(--primary30);
@@ -240,7 +270,7 @@ input:is([type="text"], [type="email"], [type="tel"], [type="password"]) {
 	margin: 15px;
 	min-width: 280px;
 	border: 2px solid var(--app);
-	border-radius: 5px;
+	border-radius: var(--b-radius);
 	cursor: auto;
 }
 
@@ -254,4 +284,52 @@ input:is([type="text"], [type="email"], [type="tel"], [type="password"]):hover {
 
 input[type="submit"] {
 	margin: 20px 15px;
+}
+
+.card {
+	border-radius: var(--b-radius);
+	border: 2px solid var(--app);
+	background-color: var(--app);
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+}
+
+.table__head,
+.table__tr:not(:last-child) {
+	border-bottom: 2px solid var(--light);
+}
+
+.table__tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.table__th {
+	font-weight: var(--bold);
+}
+
+:is(.table__th, .table__td):not(:last-child) {
+	box-shadow: inset -2px 0 var(--light);
+}
+
+.table__th,
+.table__td {
+	padding: 10px;
+}
+
+.secondary {
+	font-size: 14px;
+	color: var(--disable);
+}
+
+.center {
+	text-align: center;
+}
+
+.controller {
+	display: flex;
+	justify-content: space-between;
 }

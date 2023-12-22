@@ -26,4 +26,8 @@
 
 	/* transform */
 	--up: translate(0, -3px);
+
+	/* common */
+	--b-radius: 5px;
+	--border: 2px solid;
 }

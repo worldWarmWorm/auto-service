@@ -71,3 +71,24 @@
 	margin-right: 20px;
 }
 
+.last-value,
+.future-value {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.value {
+	border-radius: var(--b-radius);
+	padding: 5px;
+}
+
+.last-value .value {
+	background-color: var(--agree);
+	color: var(--light);
+}
+
+.future-value .value {
+	background-color: var(--warn);
+	color: var(--light);
+}
