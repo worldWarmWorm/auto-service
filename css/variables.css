@@ -29,5 +29,7 @@
 
 	/* common */
 	--b-radius: 5px;
-	--border: 2px solid;
+	--popup: rgba(0, 0, 0, .2);
+	--min: 280px;
+	--max: 1024px;
 }

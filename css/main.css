@@ -59,7 +59,7 @@
 	display: block;
 }
 
-.user a:hover {
+:is(.user a, .btn-icon):hover {
 	transform: var(--up);
 }
 
