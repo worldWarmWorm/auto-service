@@ -15,60 +15,12 @@
 	margin-right: 15px;
 }
 
-.header {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	margin-bottom: 2px;
-	flex: 0 0 auto;
-	margin-top: 15px;
-}
-
 .main {
 	flex: 1 0 auto;
 }
 
-.footer {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	margin-top: 2px;
-	flex: 0 0 auto;
-	margin-bottom: 15px;
-	text-align: center;
-}
-
-.logo {
-	margin-right: 30px;
-	width: 60px;
-}
-
-.app-name {
-	margin-right: 30px;
-}
-
-.user {
-	display: flex;
-  align-items: center;
-  justify-content: end;
-	flex-grow: 1;
-}
-
-.user a {
-	display: block;
-}
-
-:is(.user a, .btn-icon):hover {
+.btn-icon:hover {
 	transform: var(--up);
-}
-
-.user img {
-	width: 35px;
-}
-
-.user__icon {
-	margin-right: 20px;
 }
 
 .last-value,

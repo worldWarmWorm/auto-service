@@ -1,5 +1,8 @@
 
-// import './Header.css'
+import './Head.css'
+import logo from '../../images/wheel.jpeg'
+import user from '../../images/user.png'
+import authorization from '../../images/authorization.png'
 
 export default function Head() {
 	return (
@@ -7,7 +10,7 @@ export default function Head() {
 			<header className="header">
 					<div className="logo">
 						<a href={'/'}>
-							<img src={'../../images/wheel.jpeg'} alt="logo"></img>
+							<img src={logo} alt="logo"></img>
 						</a>
 					</div>
 					<div className="app-name">
@@ -16,12 +19,12 @@ export default function Head() {
 					<div className="user">
 						<div className="user__icon">
 							<a href={'/'}>
-								<img src={'../../images/user.png'} alt="user"></img>
+								<img src={user} alt="user"></img>
 							</a>
 						</div>
 						<div className="user__authorization dp-none">
 							<a href={'/'}>
-								<img src={'../../images/authorization.png'} alt="authorization"></img>
+								<img src={authorization} alt="authorization"></img>
 							</a>
 						</div>
 					</div>
