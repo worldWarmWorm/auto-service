@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import { useState } from 'react'
-import PanelMenu from './PanelMenu'
-import logo from '../images/wheel.jpeg'
-import options from '../images/options.png'
+import PanelMenu from '../PanelMenu'
+import logo from '../../images/wheel.jpeg'
+import options from '../../images/options.png'
 
-const Layout = () => {
+export default function Layout() {
 	const [isHidden, toggle] = useState(true)
 
 	return (
@@ -47,5 +47,3 @@ const Layout = () => {
 		</>
 	)
 }
-
-export { Layout }

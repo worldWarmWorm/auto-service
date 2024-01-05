@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { UserPage } from './pages/UserPage.jsx';
-import { SettingsPage } from './pages/SettingsPage.jsx';
-import { LoginPage } from './pages/LoginPage.jsx';
-import { RegistrationPage } from './pages/RegistrationPage.jsx';
+import { UserPage } from './pages/UserPage.tsx';
+import { SettingsPage } from './pages/SettingsPage.tsx';
+import { LoginPage } from './pages/LoginPage.tsx';
+import { RegistrationPage } from './pages/RegistrationPage.tsx';
 import { RestorePage } from './pages/RestorePage.tsx';
-import App from './App.jsx'
+import App from './components/App'
 import './index.css'
 
 const router = createBrowserRouter([
