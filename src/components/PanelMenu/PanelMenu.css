@@ -1,0 +1,25 @@
+.panel__menu {
+	transition: all 0.3s;
+	position: absolute;top: 65px;
+	z-index: 1;
+	background-color: var(--light);
+	border-radius: var(--b-radius);
+	box-shadow: 0 5px 10px var(--popup);
+	padding: 20px;
+	width: 220px;
+}
+
+.panel__menu li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.panel__menu li a {
+	display: flex;
+	align-items: center;
+	justify-self: start;
+}
+
+.panel__menu li a img {
+	max-width: 30px;
+	margin-right: 15px;
+}

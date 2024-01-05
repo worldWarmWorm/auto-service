@@ -1,127 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Auto-Service</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		<div class="popup">
-			<div class="popup__content">
-				<button class="cancel"></button>
-				<div class="popup__title">
-					<h2 class="sub-title center">История</h2>
-				</div>
-				<div class="popup__body">
-					<div class="table table_vertical">
-						<div class="table__head">
-							<div class="table__tr">
-								<div class="table__th">Моторное масло</div>
-							</div>
-						</div>
-						<div class="table__body">
-							<div class="table__tr bordered-bottom">
-								
-								<div class="table__td col-12 last-value">
-									<div class="value">47000</div>
-									<div class="date secondary">22-12-2023</div>
-								</div>
-								<div class="table__td col-12 last-value">
-									<div class="value">54000</div>
-									<div class="date secondary">15-02-2024</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="app">
-
-				<header class="header">
-					<div class="logo">
-						<a href="/">
-							<img src="./images/wheel.jpeg" alt="logo">
-						</a>
-					</div>
-					<div class="app-name">
-						<h1 class="title">Тачка</h1>
-					</div>
-					<div class="user">
-						<div class="user__icon">
-							<a href="./pages/profile.html">
-								<img src="./images/user.png" alt="user">
-							</a>
-						</div>
-						<div class="user__authorization" style="display: none;">
-							<a href="./pages/login.html">
-								<img src="./images/authorization.png" alt="authorization">
-							</a>
-						</div>
-					</div>
-				</header>
-
-				<main class="main">
-					<div class="service page">
-						<h2 class="sub-title text-center">
-							Обслуживание
-						</h2>
-						<section class="section section_service">
-							<div class="card">
-								<div class="table table_vertical">
-									<div class="table__head">
-										<div class="table__tr">
-											<div class="table__th col-2">Название</div>
-											<div class="table__th col-10 center">Пробег</div>
-										</div>
-									</div>
-									<div class="table__body">
-										<div class="table__tr">
-											<div class="table__td col-2 service-name">Моторное масло</div>
-											<div class="table__td col-4 last-value">
-												<div class="value">47000</div>
-												<div class="date secondary">22-12-2023</div>
-											</div>
-											<div class="table__td col-4 future-value">
-												<div class="value">54000</div>
-												<div class="date secondary"></div>
-											</div>
-											<div class="table__td col-2 controller">
-												<button class="btn-icon up" type="button"><img src="./images/history.png" alt="history"></button>
-												<button class="btn-icon" type="button"><img src="./images/editing.png" alt="editing"></button>
-												<button class="btn-icon" type="button"><img src="./images/delete.png" alt="delete"></button>
-											</div>
-										</div>
-										
-										<div class="table__tr">
-											<div class="table__td col-2 service-name">Свечи зажигания</div>
-											<div class="table__td col-4 last-value">
-												<div class="value">47000</div>
-												<div class="date secondary">22-12-2023</div>
-											</div>
-											<div class="table__td col-4 future-value">
-												<div class="value">54000</div>
-												<div class="date secondary"></div>
-											</div>
-											<div class="table__td col-2 controller">
-												<button class="btn-icon" type="button"><img src="./images/history.png" alt="history"></button>
-												<button class="btn-icon" type="button"><img src="./images/editing.png" alt="editing"></button>
-												<button class="btn-icon" type="button"><img src="./images/delete.png" alt="delete"></button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button class="btn btn_right">Добавить</button>
-						</section>
-					</div>
-				</main>
-				<footer class="footer">
-					Написать разработчику: <a class="link" href="https://t.me/davydkin_valery" target="_blank">@davydkin_valery</a>
-				</footer>
-			</div>
-		</div>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto-Service</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
